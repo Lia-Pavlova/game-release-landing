@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Lia-Pavlova.github.io/game-release-landing",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "netlify deploy -p"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "favicons": "^7.0.2",
+    "favicons-webpack-plugin": "^6.0.0",
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.58.0",
@@ -25,6 +26,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "html-loader": "^4.2.0",
     "swiper": "^8.4.4"
   }
 }

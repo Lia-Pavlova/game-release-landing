@@ -201,8 +201,7 @@
 .description {
   margin-top: 7%;
   max-width: 540px;
-  -webkit-animation: move 1s ease-in-out;
-          animation: move 1s ease-in-out;
+  animation: move 1s ease-in-out;
 }
 .description-title h1 {
   font-weight: 600;
@@ -224,7 +223,6 @@
   line-height: 19px;
   color: #fff;
   display: flex;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
@@ -307,7 +305,6 @@
   line-height: 19px;
   color: #fff;
   display: flex;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
@@ -363,7 +360,6 @@
   line-height: 19px;
   color: #fff;
   display: flex;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
@@ -383,11 +379,9 @@
   position: relative;
 }
 .dual-img img {
-  max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  -webkit-animation: gravitation 1.5s linear infinite alternate;
-          animation: gravitation 1.5s linear infinite alternate;
+  animation: gravitation 1.5s linear infinite alternate;
 }
 .dual-img::before {
   content: "";
@@ -567,7 +561,6 @@
   left: 0;
 }
 .explore-description {
-  min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
   width: 50%;
@@ -590,7 +583,6 @@
   line-height: 19px;
   color: #fff;
   display: flex;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
@@ -680,7 +672,6 @@
   padding: 8px 30px;
   display: flex;
   justify-content: flex-end;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-left: auto;
@@ -951,7 +942,6 @@
   line-height: 19px;
   color: #fff;
   display: flex;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
@@ -1054,31 +1044,12 @@
   z-index: 998;
 }
 
-@-webkit-keyframes gravitation {
-  0% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 @keyframes gravitation {
   0% {
     transform: translateY(-15px);
   }
   100% {
     transform: translateY(0px);
-  }
-}
-@-webkit-keyframes move {
-  0% {
-    opacity: 0;
-    transform: translateX(-400px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
   }
 }
 @keyframes move {
